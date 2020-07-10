@@ -14,6 +14,20 @@ public class AssignmentTest {
 
         // when
         String actual = person.introduce();
+
+        //then
         assertEquals(actual,"My name is Tom. I am 21 years old.");
+    }
+
+    @Test
+    public void student_class_test() {
+        // given
+        Student student = new Student("Tom", 21, 2);
+
+        // when
+        String actual = student.introduce();
+
+        // then
+        assertEquals(actual, "My name is Tom. I am 21 years old. I am a Student of Class 2.");
     }
 }

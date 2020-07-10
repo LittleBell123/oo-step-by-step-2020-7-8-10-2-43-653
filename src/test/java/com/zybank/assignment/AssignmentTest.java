@@ -30,4 +30,16 @@ public class AssignmentTest {
         // then
         assertEquals(actual, "My name is Tom. I am 21 years old. I am a Student of Class 2.");
     }
+
+    @Test
+    public void teacher_class_test() {
+        // given
+        Teacher teacher = new Teacher("Matt", 30, "Teacher");
+
+        // when
+        String actual = teacher.introduce();
+
+        //then
+        assertEquals(actual,"My name is Matt. I am 30 years old. I am a Teacher.");
+    }
 }

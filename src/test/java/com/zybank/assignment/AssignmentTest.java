@@ -22,7 +22,7 @@ public class AssignmentTest {
     @Test
     public void student_class_test() {
         // given
-        Student student = new Student("Tom", 21, 2);
+        Student student = new Student("Tom", 21, new Klass(2));
 
         // when
         String actual = student.introduce();
@@ -34,7 +34,7 @@ public class AssignmentTest {
     @Test
     public void teacher_class_test() {
         // given
-        Teacher teacher = new Teacher("Matt", 30, "Teacher");
+        Teacher teacher = new Teacher("Matt", 30, "Teacher", new Klass(1));
 
         // when
         String actual = teacher.introduce();
@@ -42,4 +42,6 @@ public class AssignmentTest {
         //then
         assertEquals(actual,"My name is Matt. I am 30 years old. I am a Teacher.");
     }
+
+
 }

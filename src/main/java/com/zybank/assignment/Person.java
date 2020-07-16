@@ -8,6 +8,10 @@ public class Person {
         this.age = age;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -20,7 +24,4 @@ public class Person {
         return "My name is " + name + ". I am " + age + " years old.";
     }
 
-    public void noticed(Person person) {
-
-    }
 }
